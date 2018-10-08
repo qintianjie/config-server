@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: report-web
+  profiles:
+    active:
+    - dev
+#    - native
+  cloud:
+    inetutils:
+      preferredNetworks: # 使用指定网卡
+        - 10.0
+        - 10.242
+    config:
+      discovery:
+        enabled: true
+        service-id: configServer
+      label: master
+      profile: dev
+      uri: http://localhost:8888
+      fail-fast: true
+      retry:
+        initial-interval: 1000
+        max-attempts: 3
+        max-interval: 20000
+        multiplier: 1.1
