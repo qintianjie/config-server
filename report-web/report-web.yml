@@ -16,4 +16,4 @@ spring:
         instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}:@project.version@
         tags: k1=v1,urlprefix-/${spring.application.name}
         
-k1=v1
+k1: v1
