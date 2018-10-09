@@ -17,3 +17,4 @@ spring:
         tags: k1=v1,urlprefix-/${spring.application.name}
 
 k1: v1_app_dev
+kk: application-dev.yml
