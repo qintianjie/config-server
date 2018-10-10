@@ -18,3 +18,4 @@ spring:
         
 k1: v1_rw_dev_u3
 k2: v2_rw_dev
+kksec: '{cipher}FKSAJDFGYOS8F7GLHAKERGFHLSAJ'
