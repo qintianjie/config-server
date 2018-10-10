@@ -15,6 +15,17 @@ spring:
         health-check-interval: 15s
         instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}app
         tags: k1=v1,urlprefix-/${spring.application.name}
+        
+management:
+  endpoint:
+    beans:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        exclude:
+        - test
+        include: info, health, features, env, prometheus,metrics,httptrace,threaddump,heapdump,springmetrics,refresh
 
 k1: v1_app
 kk: application.yml
