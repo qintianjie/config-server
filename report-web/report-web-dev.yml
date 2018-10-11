@@ -27,6 +27,4 @@ management:
   endpoints:
     web:
       exposure:
-        exclude:
-        - test
-        include: info, health, features, env, prometheus,metrics,httptrace,threaddump,heapdump,springmetrics,refresh
+        include: '*'
